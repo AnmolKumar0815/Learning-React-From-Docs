@@ -1,0 +1,13 @@
+.FancyBorder{
+    margin: 0;
+    padding: 10px;
+}
+.FancyBorder-blue{
+    border: 5px solid blue;
+}
+.Dialog-title{
+    margin: 0;
+}
+.Dialog-message{
+    font-size: larger;
+}

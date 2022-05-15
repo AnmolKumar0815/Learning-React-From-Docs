@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Clock from './myComponents/clock';
+import * as c from './myComponents/components';
+import * as L from './myComponents/State and Life Cycle';
+import * as H from './myComponents/Handling Events';
+import * as R from './myComponents/Conditional Rendering';
+import * as K from './myComponents/List and Keys';
+import * as F from './myComponents/Form';
+import * as Lift from './myComponents/Lifting Up State';
+import * as composition from './myComponents/composition vs inheritance';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+function App(){
+  return(
+    <>
+      <Clock />
+      <c.Welcome name="Anmol Kumar" />
+      <c.Message name = "Anmol Kumar" />
+      <L.LifeCycle name = "Anmol Kumar" />
+      <H.Toogle />
+      <R.Greeting isLoggedIn = {false}/>
+      <R.GreetingWithNewTechnique isLoggedIn = {true} />
+      <K.RenderingMultipleElement />
+      <F.Form />
+      <Lift.Calculator />
+      <composition.WelcomeDialog />
+    </>
   );
 }
 
