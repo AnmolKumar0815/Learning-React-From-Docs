@@ -13,7 +13,7 @@ function App(){
   return(
     <>
       <Clock />
-      <c.Welcome name="Anmol Kumar" />
+      <c.Welcome name = "Anmol Kumar" />
       <c.Message name = "Anmol Kumar" />
       <L.LifeCycle name = "Anmol Kumar" />
       <H.Toogle />
